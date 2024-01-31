@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import styles from "./style";
+import {Navbar, Labels, About1, About2, About3, Contact, Copyright, Developer} from "./components";
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+const App = () => (
+  <div>
+    
+    <div className="bg-primary w-full bg-image">
+      <div className={`${styles.paddingX} ${styles.flexCenter} translucent-bg`}>
+        <div className={`${styles.boxWidth}`}>
+          <Navbar />
+          <hr/>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
 
-export default App
+      <div className={styles.mainText}>
+        <div className="flex justify-center items-center pt-24">
+        Pack It, Secure It, Ship It
+        </div>
+      </div>
+      <div className={`${styles.flexCenter} text-white text-[24px]`}>
+      Be Part of the Best. Join our team!
+      </div>
+    </div>
+
+
+    <Labels />
+    <About1 />
+    <About2 />
+    <About3 />
+    <Contact/>
+    <Copyright/>
+    <Developer/>
+    
+
+  </div>
+);
+
+export default App;
