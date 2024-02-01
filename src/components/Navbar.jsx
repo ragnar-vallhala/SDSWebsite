@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { close, menu } from "../assets";
 import { navLinks } from "../constants";
 import styles  from "../style";
@@ -10,19 +9,19 @@ const Navbar = () => {
   
   
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
+    <nav className="w-full flex py-6 justify-between navbar">
       <p className={styles.title}>Secure Dispatching Services LLC</p>
 
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+      <ul className="list-none flex justify-center items-center">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+            className={`font-poppins font-normal cursor-pointer text-[14px] ${
               active === nav.title ? "text-white" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <a href={`/${nav.id}`}>{nav.title}</a>
           </li>
         ))}
       </ul>

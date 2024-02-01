@@ -40,9 +40,31 @@ import manTruck from "./manTruck.webp"
 import globe from "./globe.webp"
 import connect from "./connect.webp"
 import contact from "./contact.webp"
+import truck02 from "./truck02.webp"
+import van from "./van.webp"
+import crane from "./crane.webp"
+import container from "./container.webp"
+import pageNotFound from "./pageNotFound.png"
+import truck03 from "./truck03.webp"
+import speed from "./speedLight.webp"
+import car from "./carTransport.webp"
+import truck04 from "./truck04.webp"
+import night from "./night.png"
+import cheque from "./cheque.webp"
 
 
 export {
+  cheque,
+  night,
+  truck04,
+  car,
+  speed,
+  truck03,
+  pageNotFound,
+  container,
+  crane,
+  van,
+  truck02,
   contact,
   connect,
   globe,

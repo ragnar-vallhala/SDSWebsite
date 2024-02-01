@@ -176,6 +176,47 @@
   height: 700px; 
 }
 
+.list-none {
+  white-space: nowrap;
+}
+
+
+.bg-image-about {
+  background-image: url('assets/truck01.png'); /* Replace with the path to your image */
+  background-size:cover; /* Cover the entire container */
+  background-repeat: no-repeat;
+  height: 300px; 
+}
+
+
+.bg-image-services{
+  background-image: url('assets/cargo.png'); /* Replace with the path to your image */
+  background-size:cover; /* Cover the entire container */
+  background-repeat: no-repeat;
+  height: 300px; 
+}
+
+.bg-image-daytime{
+  background-image: url('assets/truck04.png'); /* Replace with the path to your image */
+  background-size:cover; /* Cover the entire container */
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.bg-image-nighttime{
+  background-image: url('assets/night.png'); /* Replace with the path to your image */
+  background-size:cover; /* Cover the entire container */
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.bg-image-autotransport{
+  background-image: url('assets/car01.png'); /* Replace with the path to your image */
+  background-size:cover; /* Cover the entire container */
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
 .center-text{
   text-align: center;
   font-weight: bold;
@@ -218,5 +259,58 @@
 }
 
 .translucent-bg{
-  background-color: rgba(150, 150, 150, 0.3);
+  background-color: rgba(150, 150, 150, 0.5);
+}
+
+.button-black{
+  display: flex;
+  background: #000;
+  color: #fff;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 54px;
+  border-radius: 5%;
+}
+
+.button-black-wide{
+  display: flex;
+  background: #000;
+  color: #fff;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 54px;
+  border-radius: 5%;
+}
+
+.button{
+  display: flex;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 54px;
+  border-radius: 5%;
+  border-color: #fff;
+  border-width: 2px;
+  cursor: pointer;
+}
+
+.button:hover{
+  display: flex;
+  background: #fff;
+  color: #000;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 54px;
+  border-radius: 5%;
+  border-width: 2px;
+  cursor: pointer;
 }

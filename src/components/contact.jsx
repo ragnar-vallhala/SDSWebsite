@@ -5,7 +5,7 @@ const Contact = () => {
     <div className='justify-center'>
       <p className='center-text'>Conatct Us</p>
       <div className='flex item-center p-8'>
-        <p className='text-[18px]'>Secure Dispatching Services LLC<br/>
+        <p className='text-[18px] mx-8 mt-8'>Secure Dispatching Services LLC<br/>
         America’s Secure Truck Dispatching Services for Trucking Company Owners, Owner Operators, and Car Haulers! Dry Van, Reefer, Flatbeds, Auto Transport Dispatch. Contact Secure Dispatching Services Today!
         <br/><br/>
         24/7 Dispatch Support<br/>
@@ -15,7 +15,7 @@ const Contact = () => {
         <img
         src={contact}
         alt="Description"
-        className="object-cover h-64 w-96"
+        className="object-cover mx-16 h-[500px]"
         />
       </div>
     </div>
