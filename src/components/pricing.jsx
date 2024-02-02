@@ -44,7 +44,7 @@ const Pricing = () => {
                 </p>
                 <ul className='list-disc ml-16 mt-8'>
                     {points.map((point,index)=>(
-                        <li>{point}</li>
+                        <li key={index}>{point}</li>
                     ))}
                 </ul>
             </div>

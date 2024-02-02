@@ -1,10 +1,13 @@
 
 import { Routes, Route } from "react-router-dom";
-import {Home, Aboutus, Services, NotFound, DayTime, NightTime, AutoTransport, Pricing} from "./components";
+import {Home, Aboutus, Services, NotFound, DayTime, NightTime, AutoTransport, Pricing, ContactUs} from "./components";
 
 
-
-const App = () => (
+const App = () => {
+  
+  
+  return (
+  
   <div>
     
     <Routes>
@@ -15,11 +18,12 @@ const App = () => (
       <Route path="/day-time" element={<DayTime/>}></Route>
       <Route path="/auto-transport" element={<AutoTransport/>}></Route>
       <Route path="/pricing" element={<Pricing/>}></Route>
+      <Route path="/contact" element={<ContactUs/>}></Route>
       <Route path="/*" element={<NotFound/>}></Route>
     </Routes>
 
 
   </div>
-);
+)};
 
 export default App;

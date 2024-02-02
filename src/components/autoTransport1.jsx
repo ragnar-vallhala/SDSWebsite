@@ -21,7 +21,7 @@ const AutoTransport1 = () => {
             <p>Car Hauler Dispatch Service</p>
             <p className='mt-16'>10% DISPATCH FEE<br/>
                 ***CDL OTR Drivers Only***   </p>
-            <p  className='mt-16'>
+            <div  className='mt-16'>
                 FULL SERVICE PACKAGE   
                 <ul className='list-disc ml-16'>    
                     <li>DEDICATED DISPATCHER</li>
@@ -31,10 +31,10 @@ const AutoTransport1 = () => {
                     <li>MAJORITY COD LOADS</li>
                     <li>GET PAID FAST</li>
                 </ul>
-            </p>
-            <p className='mt-8'>
-                <StartWorkButton/>
-            </p>
+            </div>
+            <div className='mt-8'>
+            <a href='/contact'><StartWorkButton/></a>
+            </div>
         </div>
       </div>
       

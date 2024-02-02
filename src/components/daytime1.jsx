@@ -43,7 +43,7 @@ const Daytime1 = () => {
       </div>
 
         <div className='flex justify-center mt-8'>
-            <StartWorkButton/>
+        <a href='/contact'><StartWorkButton/></a>
         </div>
 
     </div>
