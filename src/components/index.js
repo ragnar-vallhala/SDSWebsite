@@ -27,8 +27,10 @@ import ContactusButton from "./contactusButton";
 import ContactForm from "./contactForm";
 import ContactUs from "./contactus";
 import SendButton from "./sendButton";
+import CompanyAgreement from "./companyAgreement";
 
 export {
+  CompanyAgreement,
   SendButton,
   ContactForm,
   ContactUs,

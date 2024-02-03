@@ -30,7 +30,7 @@ const ContactUs = () => {
         <div>
         <ContactForm/>    
         </div>
-        <div>
+        <div className='mr-32 ml-8 mt-16'>
           <p><b>Our Truck Dispatch Services</b> setup packet is simple. Once you’re ready to start working with us, we will forward you a link to a carrier application to get started. Once we have all the paperwork, you’ll be introduced to your personal dispatcher and start work immediately. We are an experienced and reliable dispatch company who have great relationships with the carriers we work with. That’s why our onboarding is smooth and streamlined. Here is what you need to sign up:</p>
           <p>Secure Dispatching Services LLC</p>
           <p>

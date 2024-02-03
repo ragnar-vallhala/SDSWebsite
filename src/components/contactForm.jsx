@@ -2,14 +2,28 @@ import React, { useState } from 'react';
 import SendButton from './sendButton';
 
 const ContactForm = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [form, setForm] = useState({});
+
+
+  const handleForm=(e)=>{
+      setForm({
+        ...form,
+        [e.target.name]: e.target.value
+      })
+    }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(e.target.email.value);
-    
+
+    const response = await fetch('http://localhost:8080/contact-form',{
+      method:'POST',
+      body: JSON.stringify(form),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    const data = await response.json();
+    console.log(data);
     
     // handle form submission here
   }
@@ -23,8 +37,8 @@ const ContactForm = () => {
                 required
                 type="text"
                 id="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                name='Name'
+                onChange={handleForm}
                 placeholder='Name'
                 className='input-field m-8'
             />
@@ -32,19 +46,19 @@ const ContactForm = () => {
             <input
                 type="email"
                 id="email"
-                value={email}
+                name="Email"
                 placeholder='Email*'
                 required
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={handleForm}
                 className='input-field m-8'
             />
 
             <textarea
                 required
+                name="Message"
                 id="message"
-                value={message}
                 placeholder='Message'
-                onChange={(e) => setMessage(e.target.value)}
+                onChange={handleForm}
                 className='input-field-message m-8'
             />
             <div className='flex justify-center'>
