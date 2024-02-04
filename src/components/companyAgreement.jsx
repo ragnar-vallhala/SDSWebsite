@@ -416,9 +416,15 @@ const AgreementForm=()=>{
 
         }
 
-        <div className='flex justify-center mb-8'>
-            <button onClick={printAgreement}><PrintButton/></button>
-        </div>
+
+        {
+            isSubmitted && printPDF &&(
+                <div className='flex justify-center mb-8'>
+                    <button onClick={printAgreement}><PrintButton/></button>
+                </div>
+            )
+        }
+        
         </div>
     )
 }
