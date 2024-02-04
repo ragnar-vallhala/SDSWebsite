@@ -28,8 +28,9 @@ import ContactForm from "./contactForm";
 import ContactUs from "./contactus";
 import SendButton from "./sendButton";
 import CompanyAgreement from "./companyAgreement";
-
+import PrintButton from "./printButton";
 export {
+  PrintButton,
   CompanyAgreement,
   SendButton,
   ContactForm,

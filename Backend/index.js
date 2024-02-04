@@ -20,6 +20,7 @@ const ContactForm = mongoContact.model('ContactForm', contactSchema);
 
 const AgreementSchema = new mongoAgreement.Schema({
     CompanyName:String,
+    Country:String,
     Name: String,
     Title:String,
     FullName:String,
@@ -57,20 +58,6 @@ const AgreementSchema = new mongoAgreement.Schema({
     US_ZIP:String,
     Web_Username:String,
     Web_Password:String,
-    Quote_Amount:String,
-    Card_Holder_Name:String,
-    Card_Type:String,
-    Others:String,
-    Card_Number:String,
-    Card_Expiry:String,
-    Card_Verification:String,
-    Card_Billing_Address:String,
-    City01:String,
-    Address:String,
-    Phone02:String,
-    Email01:String,
-    Car_Holder_Name01:String,
-    Date01:String
 })
 
 const AgreementForm = mongoAgreement.model('AgeementForm', AgreementSchema);
@@ -94,6 +81,7 @@ server.post('/contact-form', async (req,res)=>{
 server.post('/agreement-form', async (req,res)=>{
     let agreementForm = new AgreementForm();
     agreementForm.Name=req.body.Name;
+    agreementForm.Country=req.body.Country;
     agreementForm.CompanyName=req.body.CompanyName;
     agreementForm.Title=req.body.Title;
     agreementForm.FullName=req.body.FullName;
@@ -131,20 +119,6 @@ server.post('/agreement-form', async (req,res)=>{
     agreementForm.US_ZIP=req.body.US_ZIP;
     agreementForm.Web_Username=req.body.Web_Username;
     agreementForm.Web_Password=req.body.Web_Password;
-    agreementForm.Quote_Amount=req.body.Quote_Amount;
-    agreementForm.Card_Holder_Name=req.body.Card_Holder_Name;
-    agreementForm.Card_Type=req.body.Card_Type;
-    agreementForm.Others=req.body.Others;
-    agreementForm.Card_Number=req.body.Card_Number;
-    agreementForm.Card_Expiry=req.body.Card_Expiry;
-    agreementForm.Card_Verification=req.body.Card_Verification;
-    agreementForm.Card_Billing_Address=req.body.Card_Billing_Address;
-    agreementForm.City01=req.body.City01;
-    agreementForm.Address=req.body.Address;
-    agreementForm.Phone02=req.body.Phone02;
-    agreementForm.Email01=req.body.Email01;
-    agreementForm.Car_Holder_Name01=req.body.Car_Holder_Name01;
-    agreementForm.Date01=req.body.Date01;
     const doc = agreementForm.save();
     res.send(doc);
 })

@@ -10,7 +10,7 @@ const Navbar = () => {
   
   return (
     <nav className="w-full flex py-6 justify-between navbar">
-      <p className={styles.title}>Secure Dispatching Services LLC</p>
+      <p className={styles.title}>Frank Dispatching Services LLC</p>
 
       <ul className="list-none flex justify-center items-center">
         {navLinks.map((nav, index) => (
