@@ -29,7 +29,13 @@ import ContactUs from "./contactus";
 import SendButton from "./sendButton";
 import CompanyAgreement from "./companyAgreement";
 import PrintButton from "./printButton";
+import Admin from "./admin";
+import Dashboard from  './dashboard'
+import FindButton from "./findButton";
 export {
+  FindButton,
+  Dashboard,
+  Admin,
   PrintButton,
   CompanyAgreement,
   SendButton,

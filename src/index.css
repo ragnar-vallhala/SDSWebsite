@@ -428,3 +428,54 @@
   height: 300px;
   width: 400px
 }
+
+.login-field{
+  margin-top: 5%;
+  border-width: 2px;
+  border-color: #000;
+  font-size: 14pt;
+  width: 300px;
+  background-color: #d4d4d4;
+}
+
+.dashboard-tab{
+  padding-top: 12px;
+  height: 56px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.dashboard-tab:hover{
+  padding-top: 12px;
+  height: 56px;
+  font-size: large;
+  font-weight: bold;
+  background-color: #d4d4d4;
+}
+
+.login-field:hover{
+  margin-top: 5%;
+  border-width: 2px;
+  border-color: #000;
+  font-size: 14pt;
+  width: 300px;
+  background-color: #ebeded;
+}
+
+.table{
+  border-collapse:collapse;
+  table-layout:fixed; 
+  width:900px;
+}
+
+.table-wide{
+  border-collapse:collapse;
+  table-layout:fixed; 
+  width:900px;
+}
+
+.td{
+  border:solid 1px rgb(163, 160, 161); 
+  width:max-content; 
+  word-wrap:break-word;
+}

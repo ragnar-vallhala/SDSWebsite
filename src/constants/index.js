@@ -25,6 +25,10 @@ export const navLinks = [
     id: "agreement",
     title: "COMPANY AGREEMENTS",
   },
+  {
+    id:'admin',
+    title: 'ADMIN CENTER'
+  }
   
 ];
 

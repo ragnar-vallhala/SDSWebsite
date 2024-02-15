@@ -236,11 +236,8 @@ const AgreementForm=()=>{
             isSubmitted && !printPDF && (
                 <div className='flex'>
                     <div className='flex flex-col w-full'>
-                        <p className='flex text-[32px] text-center justify-center mt-[200px] '>THANK YOU</p>
-                        <p className='flex text-[18px] text-center justify-center mt-[20px]'>Your response is submitted succesfully.<br/>We will get back to you soon.</p>
-                        <button onClick={setPrint} className='flex justify-center items-center'>
-                            <p className='text-[18px] text-center mt-[20px] mb-[200px] text-blue-500'>Print Agreement</p>
-                        </button>
+                        <p className='flex text-[32px] text-center justify-center mt-[175px] '>THANK YOU</p>
+                        <p className='flex text-[18px] text-center justify-center mt-[20px] mb-32'>Your response is submitted succesfully.<br/>We will get back to you soon.</p>
                     </div>
                 </div>
             )
@@ -414,15 +411,6 @@ const AgreementForm=()=>{
                 </div>
             )
 
-        }
-
-
-        {
-            isSubmitted && printPDF &&(
-                <div className='flex justify-center mb-8'>
-                    <button onClick={printAgreement}><PrintButton/></button>
-                </div>
-            )
         }
         
         </div>
