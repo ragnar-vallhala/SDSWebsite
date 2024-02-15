@@ -25,7 +25,7 @@ const ContactForm = () => {
     e.preventDefault();
     toggleSubmit();
     if(!isSubmitted)
-    {  const response = await fetch('http://localhost:8080/contact-form',{
+    {  const response = await fetch('http://localhost:8000/contact-form',{
         method:'POST',
         body: JSON.stringify(form),
         headers: {

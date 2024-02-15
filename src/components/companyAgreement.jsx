@@ -36,7 +36,7 @@ const AgreementForm=()=>{
         e.preventDefault();
         toggleSubmit();
 
-        const response = await fetch('http://localhost:8080/agreement-form',{
+        const response = await fetch('http://localhost:8000/agreement-form',{
           method:'POST',
           body: JSON.stringify(form),
           headers: {
