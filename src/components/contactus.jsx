@@ -24,7 +24,7 @@ const ContactUs = () => {
           <hr/>
         </div>
       </div>
-      <p className='center-text'>Getting Started With Secure Dispatching Services</p>
+      <p className='center-text'>Getting Started With Frank Dispatching Services</p>
       </div>
       <div className='flex mt-8 ml-32'>
         <div>
