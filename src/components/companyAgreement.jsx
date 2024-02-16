@@ -113,6 +113,8 @@ const AgreementForm=()=>{
                             <select name='PaymentPackage' onChange={handleForm} className='mt-5 agreement-input'>
                                 <option value='$250'>$250</option>
                                 <option value='5%'>5%</option>
+                                <option value='5%'>7%</option>
+                                <option value='5%'>10%</option>
                             </select>
                         </div>
                     </div>
