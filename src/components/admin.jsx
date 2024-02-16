@@ -78,10 +78,16 @@ const Admin = () => {
 
                 )
             }
-            <div>
+            {
+               !isAdmin&&(
+                    <div>
                 <Copyright/>
                 <Developer/>
-            </div>
+                    </div>
+
+            ) 
+            }
+            
         </div>
     )
 }
