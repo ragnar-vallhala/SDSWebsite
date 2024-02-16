@@ -18,7 +18,7 @@ const Login=()=>{
     const handleSubmit = async (e) => {
         e.preventDefault();
         if(!isSubmitted)
-        {  const response = await fetch('http://localhost:8080/admin-login',{
+        {  const response = await fetch('http://api.frankdispatchingservices.com/admin-login',{
             method:'POST',
             body: JSON.stringify(form),
             headers: {
