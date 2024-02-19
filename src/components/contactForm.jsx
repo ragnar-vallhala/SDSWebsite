@@ -25,7 +25,7 @@ const ContactForm = () => {
     e.preventDefault();
     toggleSubmit();
     if(!isSubmitted)
-    {  const response = await fetch('http://api.frankdispatchingservices.com/contact-form',{
+    {  const response = await fetch('https://api.frankdispatchingservices.com/contact-form',{
         method:'POST',
         body: JSON.stringify(form),
         headers: {

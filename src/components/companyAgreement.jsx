@@ -36,7 +36,7 @@ const AgreementForm=()=>{
         e.preventDefault();
         toggleSubmit();
 
-        const response = await fetch('http://api.frankdispatchingservices.com/agreement-form',{
+        const response = await fetch('https://api.frankdispatchingservices.com/agreement-form',{
           method:'POST',
           body: JSON.stringify(form),
           headers: {
