@@ -54,7 +54,7 @@ const ContactPage = () => {
             search = '';
         }
 
-        const response = await fetch('http://api.frankdispatchingservices.com/admin-getContact', {
+        const response = await fetch('https://api.frankdispatchingservices.com/admin-getContact', {
             method: 'POST',
             body: search,
             headers: {
@@ -114,7 +114,7 @@ const AgreementPage = () => {
             search = '';
         }
 
-        const response = await fetch('http://api.frankdispatchingservices.com/admin-getAgreement', {
+        const response = await fetch('https://api.frankdispatchingservices.com/admin-getAgreement', {
             method: 'POST',
             body: search,
             headers: {
@@ -171,7 +171,7 @@ const PrintPage = () => {
 
         e.preventDefault();
         let id = formID.id;
-        const response = await fetch('http://api.frankdispatchingservices.com/admin-getAgreement', {
+        const response = await fetch('https://api.frankdispatchingservices.com/admin-getAgreement', {
             method: 'POST',
             body: JSON.stringify({ _id: id }),
             headers: {
