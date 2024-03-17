@@ -1,5 +1,6 @@
 # Website for Frank Dispatching Services LLC
-This project was to build a website for ***Frank Dispatching Services LLC***. The site is built on MERN stack  (MongoDB, Express.js, React & Node.js). The front end and backend are uploaded in diffrent repositories at:\
+This project was to build a website for ***Frank Dispatching Services LLC***. The site is built on MERN stack  (MongoDB, Express.js, React & Node.js). The front end and backend are uploaded in diffrent repositories at:
+
 *For front end visit*:
 
 ```
@@ -18,7 +19,7 @@ https://frankdispatchingservices.com/
 ```
 
 ## Local setup of the project
-To  run the site locally, you will need to have NodeJS installed on your machine. Once that's done, follow these instructions:\
+To  run the site locally, you will need to have NodeJS installed on your machine. Once that's done, follow these instructions:
 
 * Clone the respository
 ```
